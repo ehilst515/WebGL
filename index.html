@@ -3,13 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>WebGL Demo</title>
 </head>
 <body onload="InitDemo();">
+    <h1>SVG Demos</h1>
+    <h2>WebGL</h2>
     <canvas id="gl-canvas" width="800" height="600">
+        Sorry, your browser does not support WebGL.
     </canvas>
-
-
+    <h2>HTML SVG Tag</h2>
+    <svg height="260" width="260">
+        <!-- Outer -->
+        <line x1="0" y1="0" x2="0" y2="250" style="stroke:rgb(0, 0, 0);stroke-width:2" /> <!-- Left -->
+        <line x1="0" y1="0" x2="250" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:2" /> <!-- Top -->
+        <line x1="250" y1="250" x2="250" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Right -->
+        <line x1="250" y1="250" x2="0" y2="250" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Bottom -->
+        <!-- Inner -->
+        <line x1="6.4" y1="6.4" x2="6.4" y2="243.6" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Left -->
+        <line x1="6.4" y1="6.4" x2="243.6" y2="6.4" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Top -->
+        <line x1="243.6" y1="243.6" x2="243.6" y2="6.4" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Right -->
+        <line x1="243.6" y1="243.6" x2="6.4" y2="243.6" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Bottom -->
+        Sorry, your browser does not support inline SVG.
+      </svg>
+      <svg height="260" width="1247.8">
+        <!-- Outer -->
+        <line x1="0" y1="0" x2="0" y2="250" style="stroke:rgb(0, 0, 0);stroke-width:2" /> <!-- Left -->
+        <line x1="0" y1="0" x2="1247.8" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:2" /> <!-- Top -->
+        <line x1="1247.8" y1="250" x2="1247.8" y2="0" style="stroke:rgb(0, 0, 0);stroke-width:2" /> <!-- Right -->
+        <line x1="1247.8" y1="250" x2="0" y2="250" style="stroke:rgb(0, 0, 0);stroke-width:1" /> <!-- Bottom -->
+         <!-- Inner -->
+         <line x1="6.4" y1="6.4" x2="6.4" y2="243.6" style="stroke:rgb(0, 0, 0);stroke-width:1" stroke-dasharray="10, 5"/> <!-- Left -->
+         <line x1="6.4" y1="6.4" x2="1241.4" y2="6.4" style="stroke:rgb(0, 0, 0);stroke-width:1" stroke-dasharray="10, 5"/> <!-- Top -->
+         <line x1="1241.4" y1="243.6" x2="1241.4" y2="6.4" style="stroke:rgb(0, 0, 0);stroke-width:1" stroke-dasharray="10, 5"/> <!-- Right -->
+         <line x1="1241.4" y1="243.6" x2="6.4" y2="243.6" style="stroke:rgb(0, 0, 0);stroke-width:1" stroke-dasharray="10, 5"/> <!-- Bottom -->
+        Sorry, your browser does not support inline SVG.
+      </svg>
     <script src="app.js"></script>
 </body>
 </html>

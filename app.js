@@ -82,8 +82,9 @@ var InitDemo = function () {
 	//
 	var triangleVertices = 
 	[ // X, Y,       R, G, B
-		0.0, 0.5,    1.0, 1.0, 0.0,
+		-0.5, 0.5,    1.0, 1.0, 0.0,
 		-0.5, -0.5,  0.7, 0.0, 1.0,
+		0.5, 0.5,    0.0, 0.0, 0.0,
 		0.5, -0.5,   0.1, 1.0, 0.6
 	];
 
@@ -117,5 +118,5 @@ var InitDemo = function () {
 	// Main render loop
 	//
 	gl.useProgram(program);
-	gl.drawArrays(gl.TRIANGLES, 0, 3);
+	gl.drawArrays(gl.TRIANGLES, 0, 4);
 };
